@@ -37,32 +37,6 @@ To synchronize files from `/path/to/source` to `/path/to/output` and log activit
 python sync_folders.py -s /path/to/source -o /path/to/output -l /path/to/logfile.log
 ```
 
-## Functions
-
-### [`parse_arguments()`](command:_github.copilot.openSymbolFromReferences?%5B%7B%22%24mid%22%3A1%2C%22path%22%3A%22%2Fhome%2Fummi%2FDocuments%2Fgithub%2Fsync_tool%2Fsync_folders.py%22%2C%22scheme%22%3A%22file%22%7D%2C%7B%22line%22%3A157%2C%22character%22%3A4%7D%5D "sync_folders.py")
-
-Parses command-line arguments and returns them.
-
-### [`main(source_directory, output_directory, log_file_path, time_to_sync)`](command:_github.copilot.openSymbolFromReferences?%5B%7B%22%24mid%22%3A1%2C%22path%22%3A%22%2Fhome%2Fummi%2FDocuments%2Fgithub%2Fsync_tool%2Fsync_folders.py%22%2C%22scheme%22%3A%22file%22%7D%2C%7B%22line%22%3A142%2C%22character%22%3A4%7D%5D "sync_folders.py")
-
-Main function that sets up logging, synchronizes directories, and sleeps for the specified time interval.
-
-### [`valid_directory(path)`](command:_github.copilot.openSymbolFromReferences?%5B%7B%22%24mid%22%3A1%2C%22path%22%3A%22%2Fhome%2Fummi%2FDocuments%2Fgithub%2Fsync_tool%2Fsync_folders.py%22%2C%22scheme%22%3A%22file%22%7D%2C%7B%22line%22%3A10%2C%22character%22%3A4%7D%5D "sync_folders.py")
-
-Checks if the provided path is a valid directory.
-
-### [`valid_log_file_path(path)`](command:_github.copilot.openSymbolFromReferences?%5B%7B%22%24mid%22%3A1%2C%22path%22%3A%22%2Fhome%2Fummi%2FDocuments%2Fgithub%2Fsync_tool%2Fsync_folders.py%22%2C%22scheme%22%3A%22file%22%7D%2C%7B%22line%22%3A34%2C%22character%22%3A4%7D%5D "sync_folders.py")
-
-Checks if the directory for the provided log file path exists, and creates it if necessary.
-
-## Logging
-
-The script logs synchronization activities to the specified log file. Ensure that the directory for the log file exists or can be created.
-
-## Synchronization
-
-The script uses the [`sync_directories`](command:_github.copilot.openSymbolFromReferences?%5B%7B%22%24mid%22%3A1%2C%22path%22%3A%22%2Fhome%2Fummi%2FDocuments%2Fgithub%2Fsync_tool%2Fsync_folders.py%22%2C%22scheme%22%3A%22file%22%7D%2C%7B%22line%22%3A81%2C%22character%22%3A4%7D%5D "sync_folders.py") function to synchronize files and folders from the source directory to the output directory. After synchronization, it logs the completion message and sleeps for the specified time interval before the next synchronization cycle.
-
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
