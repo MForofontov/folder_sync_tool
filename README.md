@@ -10,6 +10,8 @@
   - `argparse`
   - `os`
   - `time`
+  - `shutil`
+  - `hashlib`
   - `logging`
 
 ## Usage
